@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="sidebar"></div>
+
+  <main class="content">
+    <div class="form-container">
+      <h2 style="margin-bottom: 40px;">Cadastro de Contribuinte</h2>
+    
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+                <!-- Campo Radio - Active -->
+                <div class="form-group">
+                  <label>Ativo</label>
+                  <div class="radio-group">
+                    <label>
+                      <input type="radio" formControlName="ativo" value="true" />
+                      Sim
+                    </label>
+                    <label>
+                      <input type="radio" formControlName="ativo" value="false" />
+                      Não
+                    </label>
+                  </div>
+                </div>
+        
+        <!-- Campo Nome -->
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input id="nome" formControlName="nome" type="text" maxlength="100" />
+        </div>
+    
+        <!-- Campo Telefone -->
+        <div class="form-group">
+          <label for="telefone">Telefone</label>
+          <input id="telefone" formControlName="telefone" type="text" maxlength="15" />
+        </div>
+    
+        <!-- Campo Cargo -->
+        <div class="form-group">
+          <label for="cargo">Cargo</label>
+          <input id="cargo" formControlName="cargo" type="text" maxlength="30" />
+        </div>
+    
+        <button [disabled]="form.invalid" type="submit">Submit</button>
+      </form>
+      <pre>{{ form.value | json }}</pre>
+    </div>
+  </main>
+</div>

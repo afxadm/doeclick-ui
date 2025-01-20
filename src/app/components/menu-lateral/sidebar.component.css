@@ -1,0 +1,49 @@
+.sidebar {
+    background-color: #112B46;
+    color: white;
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .rotas {
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+  }
+
+  .rota-item {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    cursor: pointer;
+    width: 200px;
+  }
+  
+  .rota-item:hover {
+    background-color: #204d7e;
+    color: white; /* Opcional: muda a cor do texto ao passar o mouse */
+    border-radius: 5px; /* Opcional: arredonda as bordas do fundo */
+  }
+
+  img{
+    height: 200px;
+    width: 200px;
+  }

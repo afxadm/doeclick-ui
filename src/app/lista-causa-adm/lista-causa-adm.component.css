@@ -1,0 +1,88 @@
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: #112B46;
+  color: white;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Garante que o conteúdo ocupa toda a altura da tela */
+  padding: 40px;
+
+}
+
+/* Estilos da tabela */
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.wider-table {
+  width: 100%;
+  max-width: 1300px;
+  border-collapse: collapse;
+}
+
+th {
+  padding: 16px;
+  text-align: center;
+  font-size: 18px;
+  border-bottom: 1px solid lightgrey;
+}
+
+td {
+  padding: 16px;
+  text-align: center;
+  font-size: 16px;
+  border-bottom: 1px solid lightgrey;
+}
+
+/* Especificando a largura de colunas específicas */
+th.mat-column-id, td.mat-column-id {
+  width: 100px; /* Reduz a largura da coluna ID */
+}
+
+th.mat-column-descricao, td.mat-column-descricao {
+  text-align: left;
+  width: 550px; /* Aumenta a largura da coluna Nome */
+}
+
+th.mat-column-tipo, td.mat-column-tipo {
+  width: 250px; /* Define uma largura média para o email */
+}
+
+
+th.mat-column-ativo, td.mat-column-ativo {
+  width: 100px; /* Reduz a largura da coluna Ativo */
+}
+
+th.mat-column-acoes, td.mat-column-acoes {
+  width: 350px; /* Aumenta a largura da coluna Ações */
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+

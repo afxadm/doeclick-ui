@@ -1,0 +1,33 @@
+<div class="login-container">
+    <div class="login-form">
+      <div class="logo">
+        <img src="assets/Logo_login.png" alt="Logo" />
+      </div>
+      <h1>Login</h1> 
+
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Usuário</mat-label>
+          <input matInput formControlName="email" type="email" required />
+        </mat-form-field>
+  
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Senha</mat-label>
+          <input matInput formControlName="password" [type]="hide ? 'password' : 'text'" required />
+          <button mat-icon-button matSuffix (click)="hide = !hide" type="button">
+            <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+          </button>
+        </mat-form-field>
+  
+        <div class="actions">
+          <mat-checkbox formControlName="rememberMe">Salvar senha</mat-checkbox>
+          <a href="#">Esqueceu sua senha?</a>
+        </div>
+  
+        <button mat-raised-button color="primary" class="full-width" style=" background-color: #112B46; color: white;">Entrar</button>
+      </form>
+  
+    </div>
+  
+  </div>
+  

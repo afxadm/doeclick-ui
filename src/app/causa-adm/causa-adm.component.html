@@ -1,0 +1,98 @@
+<div class="container">
+  <div class="sidebar"></div>
+
+  <main class="content">
+    <div class="form-container">
+      <div class="selecao" *ngIf="!contribuicaoComMeta && !contribuicaoSemMeta && !pagamento">
+        <h2>Selecione a modalidade</h2>
+        <select id="selecao" (change)="escolherModalidade($event)">
+          <option value="" disabled selected>Selecione</option>
+          <option value="contribuicaoSemMeta">Contribuição sem meta</option>
+          <option value="contribuicaoComMeta">Contribuição com meta</option>
+          <option value="pagamento">Pagamento</option>
+        </select>        
+      </div>
+      <h2 *ngIf="contribuicaoComMeta || contribuicaoSemMeta || pagamento">{{titulo}}</h2>
+      <form *ngIf="contribuicaoComMeta || contribuicaoSemMeta || pagamento" [formGroup]="form" (ngSubmit)="onSubmit()">
+        
+        <!-- Campo Tipo de Causa -->
+        <!-- <div class="form-group">
+          <label for="tipo_causa">Tipo de Causa</label>
+          <select id="tipo_causa" formControlName="tipo_causa">
+            <option value="" disabled selected>Selecione</option>
+            <option value="Contribuicao">Contribuição</option>
+            <option value="Pagamento">Pagamento</option>
+          </select>
+          <small *ngIf="form.controls['tipo_causa'].touched && form.controls['tipo_causa'].invalid" class="error">
+            Tipo de causa é obrigatório.
+          </small>
+        </div> -->
+    
+        <!-- Campo Descrição -->
+        <div class="form-group">
+          <label for="descricao">Descrição</label>
+          <input id="descricao" formControlName="descricao" type="text" maxlength="100" />
+          <small *ngIf="form.controls['descricao'].touched && form.controls['descricao'].hasError('maxlength')" class="error">
+            Descrição pode ter no máximo 100 caracteres.
+          </small>
+        </div>
+    
+        <!-- Campo Ativo -->
+        <div class="form-group">
+          <label>Ativo</label>
+          <div class="radio-group">
+            <label>
+              <input type="radio" formControlName="ativo" value="true" /> Sim
+            </label>
+            <label>
+              <input type="radio" formControlName="ativo" value="false" /> Não
+            </label>
+          </div>
+        </div>
+    
+        <!-- Campo Observações -->
+        <div class="form-group">
+          <label for="observacoes">Observações</label>
+          <input id="observacoes" formControlName="observacoes" type="text" maxlength="100" />
+          <small *ngIf="form.controls['observacoes'].touched && form.controls['observacoes'].hasError('maxlength')" class="error">
+            Observações podem ter no máximo 100 caracteres.
+          </small>
+        </div>
+    
+        <!-- Campo Meta Valor -->
+        <div class="form-group" *ngIf="contribuicaoComMeta">
+          <label for="meta_valor">Meta Valor</label>
+          <input id="meta_valor" formControlName="meta_valor" type="number" step="0.01" />
+          <small *ngIf="form.controls['meta_valor'].touched && form.controls['meta_valor'].hasError('pattern')" class="error">
+            Meta Valor deve ser um número decimal com até duas casas.
+          </small>
+        </div>
+    
+        <!-- Campo Data Final -->
+        <div class="form-group" *ngIf="contribuicaoComMeta">
+          <label for="data_final">Data Final</label>
+          <input id="data_final" formControlName="data_final" type="date" />
+        </div>
+    
+        <!-- Campo Valor -->
+        <div class="form-group" *ngIf="pagamento">
+          <label for="valor">Valor</label>
+          <input id="valor" formControlName="valor" type="number" step="0.01" />
+          <small *ngIf="form.controls['valor'].touched && form.controls['valor'].hasError('pattern')" class="error">
+            Valor deve ser um número decimal com até duas casas.
+          </small>
+        </div>
+    
+        <!-- Campo Data Final Validade -->
+        <div class="form-group" *ngIf="pagamento">
+          <label for="data_final_validade">Data Final Validade</label>
+          <input id="data_final_validade" formControlName="data_final_validade" type="date" />
+        </div>
+    
+        <button type="submit" [disabled]="form.invalid">Submit</button>
+      </form>
+    </div>
+  </main>
+</div>
+
+
