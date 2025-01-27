@@ -1,0 +1,12 @@
+C:\Projects\ProjectTotem\Totem.Domain\bin\Debug\net8.0\Totem.Domain.deps.json
+C:\Projects\ProjectTotem\Totem.Domain\bin\Debug\net8.0\Totem.Domain.dll
+C:\Projects\ProjectTotem\Totem.Domain\bin\Debug\net8.0\Totem.Domain.pdb
+C:\Projects\ProjectTotem\Totem.Domain\obj\Debug\net8.0\Totem.Domain.csproj.AssemblyReference.cache
+C:\Projects\ProjectTotem\Totem.Domain\obj\Debug\net8.0\Totem.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\ProjectTotem\Totem.Domain\obj\Debug\net8.0\Totem.Domain.AssemblyInfoInputs.cache
+C:\Projects\ProjectTotem\Totem.Domain\obj\Debug\net8.0\Totem.Domain.AssemblyInfo.cs
+C:\Projects\ProjectTotem\Totem.Domain\obj\Debug\net8.0\Totem.Domain.csproj.CoreCompileInputs.cache
+C:\Projects\ProjectTotem\Totem.Domain\obj\Debug\net8.0\Totem.Domain.dll
+C:\Projects\ProjectTotem\Totem.Domain\obj\Debug\net8.0\refint\Totem.Domain.dll
+C:\Projects\ProjectTotem\Totem.Domain\obj\Debug\net8.0\Totem.Domain.pdb
+C:\Projects\ProjectTotem\Totem.Domain\obj\Debug\net8.0\ref\Totem.Domain.dll
