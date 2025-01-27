@@ -1,0 +1,17 @@
+C:\Projects\ProjectTotem\Totem.Infrastructure\bin\Debug\net8.0\Totem.Infrastructure.deps.json
+C:\Projects\ProjectTotem\Totem.Infrastructure\bin\Debug\net8.0\Totem.Infrastructure.runtimeconfig.json
+C:\Projects\ProjectTotem\Totem.Infrastructure\bin\Debug\net8.0\Totem.Infrastructure.dll
+C:\Projects\ProjectTotem\Totem.Infrastructure\bin\Debug\net8.0\Totem.Infrastructure.pdb
+C:\Projects\ProjectTotem\Totem.Infrastructure\bin\Debug\net8.0\Totem.Domain.dll
+C:\Projects\ProjectTotem\Totem.Infrastructure\bin\Debug\net8.0\Totem.Domain.pdb
+C:\Projects\ProjectTotem\Totem.Infrastructure\obj\Debug\net8.0\Totem.Infrastructure.csproj.AssemblyReference.cache
+C:\Projects\ProjectTotem\Totem.Infrastructure\obj\Debug\net8.0\Totem.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\ProjectTotem\Totem.Infrastructure\obj\Debug\net8.0\Totem.Infrastructure.AssemblyInfoInputs.cache
+C:\Projects\ProjectTotem\Totem.Infrastructure\obj\Debug\net8.0\Totem.Infrastructure.AssemblyInfo.cs
+C:\Projects\ProjectTotem\Totem.Infrastructure\obj\Debug\net8.0\Totem.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Projects\ProjectTotem\Totem.Infrastructure\obj\Debug\net8.0\Totem.In.24746EAE.Up2Date
+C:\Projects\ProjectTotem\Totem.Infrastructure\obj\Debug\net8.0\Totem.Infrastructure.dll
+C:\Projects\ProjectTotem\Totem.Infrastructure\obj\Debug\net8.0\refint\Totem.Infrastructure.dll
+C:\Projects\ProjectTotem\Totem.Infrastructure\obj\Debug\net8.0\Totem.Infrastructure.pdb
+C:\Projects\ProjectTotem\Totem.Infrastructure\obj\Debug\net8.0\Totem.Infrastructure.genruntimeconfig.cache
+C:\Projects\ProjectTotem\Totem.Infrastructure\obj\Debug\net8.0\ref\Totem.Infrastructure.dll
